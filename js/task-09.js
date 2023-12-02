@@ -11,6 +11,7 @@ let refs = {
 };
 
 refs.button.addEventListener("click", () => {
-  refs.body.style.backgroundColor = getRandomHexColor();
-  refs.span.textContent = refs.body.style.backgroundColor;
+  const randomColor = getRandomHexColor();
+  refs.body.style.backgroundColor = randomColor;
+  refs.span.textContent = randomColor;
 });
